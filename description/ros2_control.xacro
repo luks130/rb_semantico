@@ -42,7 +42,7 @@
 
     <gazebo>
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_controller">
-            <parameters></parameters>
+            <parameters>$(find rb_semantico)/config/my_controllers.yaml</parameters>
         </plugin>
     </gazebo>
 

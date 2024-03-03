@@ -12,7 +12,7 @@ controller_manager:
 ack_cont:
   ros__parameters:
 
-    publish_rate: 30
+    publish_rate: 50
 
     front_steering: true
     use_stamped_vel: false #si el imput tiene un tiempo asociado
