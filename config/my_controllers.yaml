@@ -1,0 +1,37 @@
+controller_manager:
+  ros_parameters:
+    update_rate: 30
+    use_sim_time: true
+
+    ack_cont:
+      type: ackermann_steering_controller/AckermannSteeringController
+    
+    joint_broad:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+ack_cont:
+  ros__parameters:
+
+    publish_rate: 30
+
+    front_steering: true
+    use_stamped_vel: true
+    #open_loop: false 
+    #velocity_rolling_window_size: 10 
+    #position_feedback: false 
+     
+
+
+    base_frame_id: base_link
+    rear_wheels_names: [Bottom_right_wheel_joint,Bottom_left_wheel_joint]
+    front_wheels_names: [Top_right_wheel_joint,Top_left_wheel_joint]
+    wheelbase : 0.175  #distancia enre ruedas traceras y delantera
+    front_wheel_track: 0.35 #distancia entre ambas ruedas del frente
+    rear_wheel_track: 0.35 #distancia entre ambas ruedas de atras
+    front_wheels_radius: 0.05
+    rear_wheels_radius: 0.05
+    
+
+
+
+

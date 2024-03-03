@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+    <!-- Harware interface for the control manager-->
     <ros2_control name="GazeboSystem" type="system"> 
         <hardware>
             <plugin>gazebo_ros2_control/GazeboSystem</plugin>
@@ -38,6 +39,12 @@
             <state_interface name="position"/>
         </joint>
     </ros2_control>
+
+    <gazebo>
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_controller">
+            <parameters></parameters>
+        </plugin>
+    </gazebo>
 
 
 
