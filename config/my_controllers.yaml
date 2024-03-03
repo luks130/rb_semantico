@@ -1,11 +1,11 @@
 controller_manager:
-  ros_parameters:
+  ros__parameters:
     update_rate: 30
     use_sim_time: true
 
     ack_cont:
-      type: ackermann_steering_controller/AckermannSteeringController
-    
+      type: ackermann_steering_controller/AckermannSteeringControllerr
+
     joint_broad:
       type: joint_state_broadcaster/JointStateBroadcaster
 
@@ -30,8 +30,5 @@ ack_cont:
     rear_wheel_track: 0.35 #distancia entre ambas ruedas de atras
     front_wheels_radius: 0.05
     rear_wheels_radius: 0.05
-    
 
-
-
-
+   
