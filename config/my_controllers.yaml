@@ -15,7 +15,7 @@ ack_cont:
     publish_rate: 30
 
     front_steering: true
-    use_stamped_vel: true
+    use_stamped_vel: false #si el imput tiene un tiempo asociado
     #open_loop: false 
     #velocity_rolling_window_size: 10 
     #position_feedback: false 
